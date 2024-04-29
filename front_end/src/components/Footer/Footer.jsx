@@ -14,9 +14,15 @@ const Footer = () => {
             inventore voluptatum sit dicta sed ipsam nihil sint! Vel?
           </p>
           <div className="footer-social-icon">
-            <img src={assets.facebook_icon} alt="" />
-            <img src={assets.twitter_icon} alt="" />
-            <img src={assets.linkedin_icon} alt="" />
+            <a href="https://www.facebook.com/" target="blank">
+              <img src={assets.facebook_icon} alt="" />{" "}
+            </a>
+            <a href=" https://twitter.com/?lang=en" target="blank">
+              <img src={assets.twitter_icon} alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/shoaib72/" target="blank">
+              <img src={assets.linkedin_icon} alt="" />
+            </a>
           </div>
         </div>
         <div className="footer-center-center">

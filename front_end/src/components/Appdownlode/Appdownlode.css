@@ -1,0 +1,26 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.heading .img {
+  display: flex;
+}
+.downlode_img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  gap: 30px;
+  cursor: pointer;
+}
+.downlode_img:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}

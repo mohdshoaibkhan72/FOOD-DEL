@@ -28,4 +28,24 @@
   width: 45%;
   height: auto;
   justify-content: center;
+  align-items: center;
+  display: flex;
+
+  margin-bottom: 20px;
+}
+.footer-center-left .footer-social-icon {
+  align-items: center;
+  display: flex;
+}
+.footer-copyright {
+  align-items: center;
+  margin-top: 3vh;
+}
+.footer-center-center {
+  display: flex;
+}
+.footer-center-center li {
+  align-items: start;
+  list-style: none;
+  row-gap: 20px;
 }
