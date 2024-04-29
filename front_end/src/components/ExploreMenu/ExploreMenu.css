@@ -7,10 +7,12 @@
 .explore-menu h1 {
   color: #262626;
   font-weight: 500;
+  animation: fadeIn 3s;
 }
 .explore-menu-text {
   max-width: 60%;
   columns: #808080;
+  animation: fadeIn 3s;
 }
 
 .explore-menu-list {
