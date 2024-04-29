@@ -49,3 +49,29 @@
   border: 4px solid tomato;
   padding: 2px;
 }
+
+@media (max-width: 700px) {
+  .explore-menu h1 {
+    color: #262626;
+    font-weight: 450;
+    font-size: 30px;
+  }
+  .explore-menu-text {
+    max-width: 85%;
+    columns: #808080;
+  }
+  .explore-menu hr {
+    margin: 2px;
+  }
+  .explore-menu-list {
+    gap: 10px;
+    margin: 0px;
+  }
+  .explore-menu-list-item img {
+    width: 5.5vw;
+    min-width: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0, 2s;
+  }
+}

@@ -1,6 +1,6 @@
 .navbar {
   height: 10vh;
-  padding: 20px 0px;
+  padding: 5vw 0px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -10,6 +10,7 @@
 .navbar .logo {
   width: 150px;
 }
+
 .navbar-menu {
   display: flex;
   list-style: none;
@@ -17,15 +18,18 @@
   color: #49557e;
   font-size: 18px;
 }
+
 .navbar-menu li {
   cursor: pointer;
 }
+
 .navbar-right {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
+
 .navbar button {
   background: transparent;
   font-size: 16px;
@@ -36,19 +40,21 @@
   cursor: pointer;
   transition: 0.3s;
 }
+
 .navbar button:hover {
   background-color: #fff4f2;
 }
+
 .navbar .active {
   padding-bottom: 2px;
   border-bottom: 2px solid #49557e;
 }
 
-.navbar-serch-icon {
+.navbar-search-icon {
   position: relative;
 }
 
-.navbar-serch-icon .dot {
+.navbar-search-icon .dot {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -56,4 +62,53 @@
   border-radius: 5px;
   top: -8px;
   right: -8px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 1050px) {
+  .navbar .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  .navbar-right {
+    gap: 30px;
+  }
+  .navbar-right img {
+    width: 22px;
+  }
+  .navbar-right button {
+    padding: 8px 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+  }
+  .navbar-right img {
+    width: 20px;
+  }
+  .navbar-right button {
+    padding: 6px 20px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navbar-menu {
+    display: none;
+  }
 }

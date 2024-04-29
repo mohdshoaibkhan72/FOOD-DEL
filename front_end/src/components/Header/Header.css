@@ -2,9 +2,11 @@
   height: 90vh;
   margin: 5px auto;
   background: url("/header_img.png") no-repeat;
+  background-size: cover; /* Fixing background property */
   position: relative;
   border-radius: 10px;
 }
+
 .header-contents {
   display: flex;
   position: absolute;
@@ -22,9 +24,11 @@
   font-weight: 500;
   font-size: max(4.5vw, 22px);
 }
+
 .header-contents p {
   color: white;
 }
+
 .header-contents button {
   border: none;
   color: #747474;
@@ -34,4 +38,29 @@
   border-radius: 50px;
   font-size: max(1vw, 13px);
   cursor: pointer;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 700px) {
+  .header {
+    height: 30vh;
+  }
+
+  .header-contents {
+    left: 5px;
+    bottom: 5%;
+  }
+  .header-contents p {
+    width: 70vw;
+    font-size: 10px;
+  }
+  .header-contents h2 {
+    font-size: 20px;
+  }
+
+  .header-contents button {
+    padding: 10px 20px;
+    font-size: 12px;
+    width: fit-content;
+  }
 }

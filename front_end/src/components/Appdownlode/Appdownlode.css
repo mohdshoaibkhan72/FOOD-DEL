@@ -7,9 +7,11 @@
   margin-top: 20px;
   font-weight: 500;
 }
+
 .heading .img {
   display: flex;
 }
+
 .downlode_img {
   display: flex;
   flex-direction: row;
@@ -20,7 +22,24 @@
   gap: 30px;
   cursor: pointer;
 }
+
 .downlode_img:hover {
   transform: scale(1.05);
   transition: 1s;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+  .heading {
+    margin-top: 10px; /* Adjust margin-top for smaller screens */
+  }
+
+  .downlode_img {
+    flex-direction: column; /* Stack items vertically for smaller screens */
+    padding: 30px; /* Adjust padding for smaller screens */
+  }
+
+  .downlode_img img {
+    width: 100px; /* Adjust image size for smaller screens */
+  }
 }
