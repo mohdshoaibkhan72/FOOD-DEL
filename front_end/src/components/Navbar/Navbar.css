@@ -103,8 +103,8 @@
     width: 20px;
   }
   .navbar-right button {
-    padding: 6px 20px;
-    font-size: 15px;
+    padding: 6px;
+    font-size: 1.5vh;
   }
 }
 @media only screen and (max-width: 700px) {
