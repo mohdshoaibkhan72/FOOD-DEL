@@ -50,11 +50,11 @@
   border-bottom: 2px solid #49557e;
 }
 
-.navbar-search-icon {
+.navbar-serch-icon {
   position: relative;
 }
 
-.navbar-search-icon .dot {
+.navbar-serch-icon .dot {
   position: absolute;
   width: 10px;
   height: 10px;
