@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "sever.js",
+  "type": "module",
   "scripts": {
-    "server":"nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
