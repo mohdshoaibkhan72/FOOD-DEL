@@ -1,19 +1,20 @@
-import mongoose from "mongoose";
+// User model (models/Registration.models.js)
+const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-  name: {
+  fullname: {
     type: String,
-    require: true,
+    required: true,
   },
   email: {
-    type: email,
-    require: true,
+    type: String,
+    required: true,
     unique: true,
   },
   password: {
     type: String,
-    require: true,
-    min: 8,
+    required: true,
+    minlength: 8,
   },
   createdAt: {
     type: Date,
@@ -21,8 +22,5 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-// Create a model using the schema
 const User = mongoose.model("User", userSchema);
-
-// Export the model
 module.exports = User;
