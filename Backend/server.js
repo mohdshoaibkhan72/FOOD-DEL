@@ -3,6 +3,7 @@ const express = require("express");
 const connectDB = require("./config/Db.connection");
 const Registeruser = require("./controllers/Register");
 const Login = require("./controllers/Login");
+const Addfood = require("./controllers/foodcotroller");
 
 const app = express();
 const port = 3000;
@@ -16,6 +17,9 @@ app.use(express.json());
 //Register Login
 app.post("/register", Registeruser);
 app.post("/login", Login);
+
+//addfoods
+app.post("/addfood", Addfood);
 
 app.get("/", (req, res) => res.send("Hello World!"));
 
