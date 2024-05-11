@@ -1,4 +1,5 @@
 // Controller (controllers/Register.js)
+const bcrypt = require("bcrypt");
 const User = require("../models/Registration.models");
 
 const Registeruser = async (req, res) => {
@@ -19,8 +20,11 @@ const Registeruser = async (req, res) => {
         .send({ success: false, message: "User already exists" });
     }
 
-    // Create a new user
-    const user = new User({ fullname, email, password });
+    // Hash the password
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // Create a new user with hashed password
+    const user = new User({ fullname, email, password: hashedPassword });
     await user.save();
 
     // Send a success response
