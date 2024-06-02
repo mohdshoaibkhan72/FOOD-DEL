@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "src": "/register", "dest": "/server.js" },
+    { "src": "/login", "dest": "/server.js" },
+    { "src": "/addfood", "dest": "/server.js" },
+    { "src": "/", "dest": "/server.js" }
+  ]
+}
